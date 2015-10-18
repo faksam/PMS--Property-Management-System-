@@ -1,1 +1,2 @@
 c:\users\samuel\documents\visual studio 2015\Projects\PMS\PMS\bin\Debug\PMS.exe.config
+C:\Users\Akoji\Desktop\MyGithub\faksamProject\PMS--Property-Management-System-\PMS\bin\Debug\PMS.exe.config
