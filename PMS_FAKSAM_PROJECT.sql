@@ -1,10 +1,15 @@
-Create database PMS
-go 
-using PMS
-go 
+USE master
+GO
+if exists (select * from sysdatabases where name='PMS')
+		drop database PMS
+go
+create database PMS
+go
+use PMS
+go
 create table Manager
 (
-ID int identity (10,1) primary key,
+ManagerID int identity (10,1) primary key,
 Name varchar(30) not null,
 Gender varchar(10),
 DOB date,
@@ -28,12 +33,12 @@ PhoneNumber int not null,
 EmailAddress varchar (50),
 Username varchar(20) not null,
 [Password] varchar(15) not null check ([password] >= 8),
-ID int foreign key  references Manager(ID)
+ManagerID int foreign key  references Manager(ManagerID)
 )
 
 create table Properity 
 (
-ProperityId int identity (1,1) primary key,
+ProperityID int identity (1,1) primary key,
 Location varchar(30),
 [Address] varchar(50) not null,
 Price money,
@@ -46,7 +51,7 @@ LivingArea int,
 NumberOfRooms int,
 NumberOfBathroom int,
 Imagefolder varchar(100),
-ID int foreign key  references Manager(ID),
+ManagerID int foreign key  references Manager(ManagerID),
 LandLordID int foreign key  references LandLord(LandLordID)
 )
 
@@ -64,5 +69,5 @@ Nationality varchar(30),
 [Addres] varchar(50),
 MovingDate date,
 LeaseEndDate date,
-ProperityId int  foreign key  references Properity (ProperityId)
+ProperityID int  foreign key  references Properity (ProperityID)
 )
