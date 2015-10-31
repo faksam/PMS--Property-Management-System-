@@ -36,9 +36,9 @@ Username varchar(20) not null,
 ManagerID int foreign key  references Manager(ManagerID)
 )
 
-create table Properity 
+create table Property 
 (
-ProperityID int identity (1,1) primary key,
+PropertyID int identity (1,1) primary key,
 Location varchar(30),
 [Address] varchar(50) not null,
 Price money,
@@ -69,5 +69,23 @@ Nationality varchar(30),
 [Addres] varchar(50),
 MovingDate date,
 LeaseEndDate date,
-ProperityID int  foreign key  references Properity (ProperityID)
+PropertyID int  foreign key  references Property (PropertyID)
 )
+
+
+
+Select * from Manager
+ManagerID,Name,Gender,DOB,Address,PhoneNo,Email,Username,Password
+insert into Manager values ('ManagerName','Male','09-05-1992','ManagerAddress',123456789,'ManagerEmail','ManagerUsername',1234567)
+
+
+select * from LandLord
+LandLordID,Name,Gender,DOB,Nationality,State,Address,PhoneNo,Email,Username,Password,ManagerID
+
+select * from Property
+propertyID,Location,Address,Price,PropertyType,Size,Discription,Status,Building,LinvingArea,NoRooms,NoBaths,Imagefolde,ManagerID,LandLordID
+
+
+select * from Tenant
+TenantID,FirstName,LastName,Gender,DOB,Status,PhoneNo,Email,Nationality,Address,MovingDate,LeaseEndDate,propertyID
+
