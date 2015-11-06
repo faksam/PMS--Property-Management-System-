@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace PMS
 {
-    public partial class Form1 : Form
+    public partial class PMS : Form
     {
-        public Form1()
+        public PMS()
         {
             InitializeComponent();
             me();
@@ -22,7 +22,8 @@ namespace PMS
 
         public void me()
         {
-            string TheCommand = "select * from Manager";
+            string TheCommand = "select * from Property";
+            string TheCommand2 = "select * from Tenant";
             SqlConnection MyConnection = new SqlConnection("Data Source=FAKSAM;Initial Catalog=PMS;Integrated Security=True");
             SqlDataAdapter MyDataAdapter = new SqlDataAdapter(TheCommand, MyConnection);
 
@@ -39,6 +40,16 @@ namespace PMS
             }
             else
                 label1.Text = "No Network";
+
+            MyDataAdapter = new SqlDataAdapter(TheCommand2, MyConnection);
+            MyDataSet = new DataSet();
+            MyConnection.Open();
+            MyDataAdapter.Fill(MyDataSet, "FilterTable");
+            MyConnection.Close();
+            dataGridView2.DataSource = MyDataSet;
+            dataGridView2.DataMember = "FilterTable";
+
+            //dataGridView1.Columns[3].Width = 660;
         }
 
         private void dataGridView1_MouseClick(object sender, MouseEventArgs e)
@@ -61,6 +72,16 @@ namespace PMS
 
             }
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            AddTenant frm = new AddTenant();
+            frm.TopLevel = false;
+            frm.Visible = true;
+            frm.FormBorderStyle = FormBorderStyle.None;
+            frm.Dock = DockStyle.Fill;
+            tbcPMS.TabPages[5].Controls.Add(frm);
         }
     }
 }

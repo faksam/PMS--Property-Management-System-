@@ -10,12 +10,12 @@ go
 create table Manager
 (
 ManagerID int identity (10,1) primary key,
-Name varchar(30) not null,
+Fullname varchar(80) not null,
 Gender varchar(10),
 DOB date,
-[Address] varchar (50),
 PhoneNumber int not null,
 EmailAddress varchar (50),
+[Address] varchar(150),
 Username varchar(20) not null,
 [Password] varchar(15) not null check ([password] >= 8)
 
@@ -23,14 +23,12 @@ Username varchar(20) not null,
 create table LandLord
 (
 LandLordID int identity (10,1) primary key,
-Name varchar(30) not null,
+Fullname varchar(80) not null,
 Gender varchar(10),
 DOB date,
-Nationality varchar(20),
-[State] varchar(30),
-[Address] varchar (50),
 PhoneNumber int not null,
 EmailAddress varchar (50),
+[Address] varchar(150),
 Username varchar(20) not null,
 [Password] varchar(15) not null check ([password] >= 8),
 ManagerID int foreign key  references Manager(ManagerID)
@@ -40,7 +38,7 @@ create table Property
 (
 PropertyID int identity (1,1) primary key,
 Location varchar(30),
-[Address] varchar(50) not null,
+[Address] varchar(150) not null,
 Price money,
 ProperityType varchar(20) not null,
 Size int,
@@ -58,34 +56,31 @@ LandLordID int foreign key  references LandLord(LandLordID)
 create table Tenant 
 (
 TenantID int identity (1,1) primary key,
-FirstName varchar(30),
-LastName varchar(30),
-DOB date,
+Fullname varchar(80) not null,
 Gender varchar(10),
-[Status] varchar(15),
+DOB date,
 PhoneNumber int not null,
 EmailAddress varchar (50),
-Nationality varchar(30),
-[Addres] varchar(50),
 MovingDate date,
 LeaseEndDate date,
+[Status] varchar(15),
 PropertyID int  foreign key  references Property (PropertyID)
 )
 
 
 
 Select * from Manager
-ManagerID,Name,Gender,DOB,Address,PhoneNo,Email,Username,Password
-insert into Manager values ('ManagerName','Male','09-05-1992','ManagerAddress',123456789,'ManagerEmail','ManagerUsername',1234567)
 
 
 select * from LandLord
-LandLordID,Name,Gender,DOB,Nationality,State,Address,PhoneNo,Email,Username,Password,ManagerID
-
-select * from Property
-propertyID,Location,Address,Price,PropertyType,Size,Discription,Status,Building,LinvingArea,NoRooms,NoBaths,Imagefolde,ManagerID,LandLordID
 
 
 select * from Tenant
-TenantID,FirstName,LastName,Gender,DOB,Status,PhoneNo,Email,Nationality,Address,MovingDate,LeaseEndDate,propertyID
+
+
+select * from Property
+
+
+
+insert into Manager values ('ManagerName','Male','09-05-1992','ManagerAddress',123456789,'ManagerEmail','ManagerUsername',1234567)
 

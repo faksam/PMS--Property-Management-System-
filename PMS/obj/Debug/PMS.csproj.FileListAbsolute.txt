@@ -3,8 +3,10 @@ C:\Users\Akoji\Desktop\MyGithub\faksamProject\PMS--Property-Management-System-\P
 C:\Users\Samuel\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\Debug\PMS.exe
 C:\Users\Samuel\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\Debug\PMS.pdb
 C:\Users\Samuel\Documents\Visual Studio 2015\Projects\PMS\PMS\obj\Debug\PMS.csprojResolveAssemblyReference.cache
-C:\Users\Samuel\Documents\Visual Studio 2015\Projects\PMS\PMS\obj\Debug\PMS.Form1.resources
 C:\Users\Samuel\Documents\Visual Studio 2015\Projects\PMS\PMS\obj\Debug\PMS.Properties.Resources.resources
 C:\Users\Samuel\Documents\Visual Studio 2015\Projects\PMS\PMS\obj\Debug\PMS.csproj.GenerateResource.Cache
 C:\Users\Samuel\Documents\Visual Studio 2015\Projects\PMS\PMS\obj\Debug\PMS.exe
 C:\Users\Samuel\Documents\Visual Studio 2015\Projects\PMS\PMS\obj\Debug\PMS.pdb
+C:\Users\Samuel\Documents\Visual Studio 2015\Projects\PMS\PMS\obj\Debug\PMS.Login.resources
+C:\Users\Samuel\Documents\Visual Studio 2015\Projects\PMS\PMS\obj\Debug\PMS.PMS.resources
+C:\Users\Samuel\Documents\Visual Studio 2015\Projects\PMS\PMS\obj\Debug\PMS.AddTenant.resources
