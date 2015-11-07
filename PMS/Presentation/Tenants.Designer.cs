@@ -28,19 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.DGVTenants = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.DGVTenants)).BeginInit();
             this.SuspendLayout();
+            // 
+            // DGVTenants
+            // 
+            this.DGVTenants.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DGVTenants.Location = new System.Drawing.Point(0, -2);
+            this.DGVTenants.Name = "DGVTenants";
+            this.DGVTenants.Size = new System.Drawing.Size(967, 541);
+            this.DGVTenants.TabIndex = 0;
             // 
             // Tenants
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(937, 509);
+            this.ClientSize = new System.Drawing.Size(967, 541);
+            this.Controls.Add(this.DGVTenants);
             this.Name = "Tenants";
             this.Text = "Tenants";
+            ((System.ComponentModel.ISupportInitialize)(this.DGVTenants)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.DataGridView DGVTenants;
     }
 }

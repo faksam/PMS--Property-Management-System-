@@ -17,42 +17,19 @@ namespace PMS.Presentation
         public Properties()
         {
             InitializeComponent();
-            me();
+            LoadData();
         }
 
-        public void me()
+        public void LoadData()
         {
-            string TheCommand = "select * from Property";
-            string TheCommand2 = "select * from Tenant";
-            SqlConnection MyConnection = new SqlConnection("Data Source=FAKSAM;Initial Catalog=PMS;Integrated Security=True");
-            SqlDataAdapter MyDataAdapter = new SqlDataAdapter(TheCommand, MyConnection);
-
-            DataSet MyDataSet = new DataSet();
-            MyConnection.Open();
-
-            MyDataAdapter.Fill(MyDataSet, "FilterTable");
-            MyConnection.Close();
-            dataGridView1.DataSource = MyDataSet;
-            dataGridView1.DataMember = "FilterTable";
-            if (NetworkInterface.GetIsNetworkAvailable())
-            {
-                //label1.Text = "Network";
-            }
-            else
-                //label1.Text = "No Network";
-
-            MyDataAdapter = new SqlDataAdapter(TheCommand2, MyConnection);
-            MyDataSet = new DataSet();
-            MyConnection.Open();
-            MyDataAdapter.Fill(MyDataSet, "FilterTable");
-            MyConnection.Close();
-            //dataGridView2.DataSource = MyDataSet;
-            //dataGridView2.DataMember = "FilterTable";
-
+            
+            DGVProperties.DataSource = Business.Property.LoadProperties();
+            DGVProperties.DataMember = "FilterTable";
             //dataGridView1.Columns[3].Width = 660;
         }
 
-        private void dataGridView1_MouseClick(object sender, MouseEventArgs e)
+
+        private void DGVProperties_MouseClick(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Right)
             {
@@ -61,17 +38,23 @@ namespace PMS.Presentation
                 m.MenuItems.Add(new MenuItem("Copy"));
                 m.MenuItems.Add(new MenuItem("Paste"));
 
-                int currentMouseOverRow = dataGridView1.HitTest(e.X, e.Y).RowIndex;
-
+                m.MenuItems[0].Click += DGVProperties_Cut;
+                int currentMouseOverRow = DGVProperties.HitTest(e.X, e.Y).RowIndex;
+                
                 if (currentMouseOverRow >= 0)
                 {
                     m.MenuItems.Add(new MenuItem(string.Format("Do something to row {0}", currentMouseOverRow.ToString())));
                 }
-
-                m.Show(dataGridView1, new Point(e.X, e.Y));
+                
+                m.Show(DGVProperties, new Point(e.X, e.Y));
 
             }
+        }
 
+        void DGVProperties_Cut(object sender, EventArgs e)
+        {
+            //throw new NotImplementedException();
+            MessageBox.Show("You clicked cut");
         }
     }
 }

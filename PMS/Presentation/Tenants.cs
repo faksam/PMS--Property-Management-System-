@@ -14,7 +14,16 @@ namespace PMS.Presentation
     {
         public Tenants()
         {
-            InitializeComponent();
+            InitializeComponent(); 
+            LoadData();
+        }
+
+        public void LoadData()
+        {
+
+            DGVTenants.DataSource = Business.Tenant.LoadTenants();
+            DGVTenants.DataMember = "FilterTable";
+            //dataGridView1.Columns[3].Width = 660;
         }
     }
 }

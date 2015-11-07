@@ -48,6 +48,12 @@
     <Compile Include="Business\Landlord.cs" />
     <Compile Include="Business\Property.cs" />
     <Compile Include="Business\Tenant.cs" />
+    <Compile Include="Presentation\AddLandlord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\AddLandlord.Designer.cs">
+      <DependentUpon>AddLandlord.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentation\AddProperty.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -59,6 +65,18 @@
     </Compile>
     <Compile Include="Presentation\AddTenant.Designer.cs">
       <DependentUpon>AddTenant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\LandlordDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\LandlordDetails.Designer.cs">
+      <DependentUpon>LandlordDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\Landlords.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\Landlords.Designer.cs">
+      <DependentUpon>Landlords.cs</DependentUpon>
     </Compile>
     <Compile Include="Presentation\PMS.cs">
       <SubType>Form</SubType>
@@ -104,11 +122,20 @@
     <Compile Include="Presentation\TenantDetails.Designer.cs">
       <DependentUpon>TenantDetails.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Presentation\AddLandlord.resx">
+      <DependentUpon>AddLandlord.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentation\AddProperty.resx">
       <DependentUpon>AddProperty.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\AddTenant.resx">
       <DependentUpon>AddTenant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\LandlordDetails.resx">
+      <DependentUpon>LandlordDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\Landlords.resx">
+      <DependentUpon>Landlords.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
