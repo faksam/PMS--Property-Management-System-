@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PMS.Presentation
 {
-    public partial class Property : Form
+    public partial class Summary : Form
     {
-        public Property()
+        public Summary()
         {
             InitializeComponent();
         }

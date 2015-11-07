@@ -32,15 +32,12 @@
             this.tbpTenant = new System.Windows.Forms.TabPage();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.tbpProperty = new System.Windows.Forms.TabPage();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tbpSummary = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.tbcPMS = new System.Windows.Forms.TabControl();
             this.tbpTenant.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            this.tbpProperty.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tbpSummary.SuspendLayout();
             this.tbcPMS.SuspendLayout();
             this.SuspendLayout();
@@ -76,7 +73,6 @@
             // 
             // tbpProperty
             // 
-            this.tbpProperty.Controls.Add(this.dataGridView1);
             this.tbpProperty.Location = new System.Drawing.Point(4, 27);
             this.tbpProperty.Name = "tbpProperty";
             this.tbpProperty.Padding = new System.Windows.Forms.Padding(3);
@@ -84,16 +80,6 @@
             this.tbpProperty.TabIndex = 1;
             this.tbpProperty.Text = "Properties";
             this.tbpProperty.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(1023, 592);
-            this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.dataGridView1_MouseClick);
             // 
             // tbpSummary
             // 
@@ -107,6 +93,15 @@
             this.tbpSummary.Text = "Summary";
             this.tbpSummary.UseVisualStyleBackColor = true;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(104, 68);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(41, 15);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "label1";
+            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(170, 126);
@@ -116,15 +111,6 @@
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(104, 68);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(41, 15);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "label1";
             // 
             // tbcPMS
             // 
@@ -154,8 +140,6 @@
             this.Text = "Property Management System";
             this.tbpTenant.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            this.tbpProperty.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.tbpSummary.ResumeLayout(false);
             this.tbpSummary.PerformLayout();
             this.tbcPMS.ResumeLayout(false);
@@ -169,7 +153,6 @@
         private System.Windows.Forms.TabPage tbpTenant;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.TabPage tbpProperty;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TabPage tbpSummary;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;

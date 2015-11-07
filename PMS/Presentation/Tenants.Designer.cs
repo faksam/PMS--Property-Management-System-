@@ -1,6 +1,6 @@
-﻿namespace PMS
+﻿namespace PMS.Presentation
 {
-    partial class AddProperty
+    partial class Tenants
     {
         /// <summary>
         /// Required designer variable.
@@ -30,13 +30,13 @@
         {
             this.SuspendLayout();
             // 
-            // AddProperty
+            // Tenants
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(937, 509);
-            this.Name = "AddProperty";
-            this.Text = "AddProperty";
+            this.Name = "Tenants";
+            this.Text = "Tenants";
             this.ResumeLayout(false);
 
         }

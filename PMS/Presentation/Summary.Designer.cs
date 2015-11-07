@@ -1,6 +1,6 @@
-﻿namespace PMS
+﻿namespace PMS.Presentation
 {
-    partial class Tenant
+    partial class Summary
     {
         /// <summary>
         /// Required designer variable.
@@ -28,9 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // Summary
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Text = "Tenant";
+            this.ClientSize = new System.Drawing.Size(937, 509);
+            this.Name = "Summary";
+            this.Text = "Summary";
+            this.ResumeLayout(false);
+
         }
 
         #endregion

@@ -45,6 +45,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Business\Landlord.cs" />
+    <Compile Include="Business\Property.cs" />
+    <Compile Include="Business\Tenant.cs" />
     <Compile Include="Presentation\AddProperty.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,20 +72,41 @@
     <Compile Include="Presentation\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="Presentation\Property.cs">
+    <Compile Include="Presentation\Properties.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentation\Property.Designer.cs">
-      <DependentUpon>Property.cs</DependentUpon>
+    <Compile Include="Presentation\Properties.Designer.cs">
+      <DependentUpon>Properties.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\PropertyDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\PropertyDetails.Designer.cs">
+      <DependentUpon>PropertyDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\Summary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\Summary.Designer.cs">
+      <DependentUpon>Summary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\Tenants.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\Tenants.Designer.cs">
+      <DependentUpon>Tenants.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Presentation\Tenant.cs">
+    <Compile Include="Presentation\TenantDetails.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentation\Tenant.Designer.cs">
-      <DependentUpon>Tenant.cs</DependentUpon>
+    <Compile Include="Presentation\TenantDetails.Designer.cs">
+      <DependentUpon>TenantDetails.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Presentation\AddProperty.resx">
+      <DependentUpon>AddProperty.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentation\AddTenant.resx">
       <DependentUpon>AddTenant.cs</DependentUpon>
     </EmbeddedResource>
@@ -91,6 +115,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\PMS.resx">
       <DependentUpon>PMS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\Properties.resx">
+      <DependentUpon>Properties.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\PropertyDetails.resx">
+      <DependentUpon>PropertyDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\Summary.resx">
+      <DependentUpon>Summary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\TenantDetails.resx">
+      <DependentUpon>TenantDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\Tenants.resx">
+      <DependentUpon>Tenants.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -115,7 +154,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Business\" />
     <Folder Include="Data\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
