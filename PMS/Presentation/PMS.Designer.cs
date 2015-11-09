@@ -102,6 +102,7 @@
             this.Name = "PMS";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Property Management System";
+            this.Load += new System.EventHandler(this.PMS_Load);
             this.tbcPMS.ResumeLayout(false);
             this.ResumeLayout(false);
 

@@ -39,7 +39,7 @@ create table Property
 PropertyID int identity (1,1) primary key,
 [Address] varchar(150) not null,
 Price money,
-ProperityType varchar(20) not null,
+PropertyType varchar(20) not null,
 Size int,
 Discription ntext,
 [Status] ntext,
@@ -78,8 +78,9 @@ select * from Tenant
 
 
 select * from Property
+go
 
+insert into Manager(Fullname,Gender,DOB,[Address],PhoneNumber,EmailAddress,Username,[Password]) 
+values ('ManagerName','Male','09-05-1992','ManagerAddress',123456789,'ManagerEmail','ManagerUsername',1234567)
 
-
-insert into Manager values ('ManagerName','Male','09-05-1992','ManagerAddress',123456789,'ManagerEmail','ManagerUsername',1234567)
-
+insert into Property (Address,PropertyType) values('Blah blah blah','Estate')

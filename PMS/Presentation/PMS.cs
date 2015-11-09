@@ -34,6 +34,11 @@ namespace PMS
             tbcPMS.TabPages[2].Controls.Add(Business.Tenant.LoadTenantsForm());
         }
 
+       private void PMS_Load(object sender, EventArgs e)
+       {
+
+       }
+
 
 
     }
