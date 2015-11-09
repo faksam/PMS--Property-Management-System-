@@ -33,20 +33,15 @@ Username varchar(20) not null,
 [Password] varchar(15) not null check ([password] >= 8),
 ManagerID int foreign key  references Manager(ManagerID)
 )
-
 create table Property 
 (
 PropertyID int identity (1,1) primary key,
 [Address] varchar(150) not null,
 Price money,
-ProperityType varchar(20) not null,
+PropertyType varchar(20) not null,
 Size int,
-Discription ntext,
-[Status] ntext,
-Building varchar(20),
-LivingArea varchar(20),
-NumberOfRooms int,
-NumberOfBathroom int,
+Description varchar(50),
+[Status] varchar(20),
 Imagefolder varchar(150),
 ManagerID int foreign key  references Manager(ManagerID),
 LandLordID int foreign key  references LandLord(LandLordID)
@@ -60,7 +55,7 @@ Gender varchar(10),
 DOB date,
 PhoneNumber int not null,
 EmailAddress varchar (50),
-MovingDate date,
+MoveInDate date,
 LeaseEndDate date,
 [Status] varchar(15),
 PropertyID int  foreign key  references Property (PropertyID)
@@ -81,5 +76,13 @@ select * from Property
 
 
 
-insert into Manager values ('ManagerName','Male','09-05-1992','ManagerAddress',123456789,'ManagerEmail','ManagerUsername',1234567)
+/*
+select Landlord.fullname as [Landlord], property.PropertyType,property.Address,property.Status from property 
+, landlord where property.LandLordID=landlord.LandLordID
+
+select Fullname,Gender,PhoneNumber,EmailAddress,MoveInDate,LeaseEndDate,Status from Tenant
+
+
+insert into Manager values ('ManagerName','Male','09-05-1992',123456789,'ManagerEmail','ManagerAddress','ManagerUsername',1234567)
+*/
 
