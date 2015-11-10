@@ -22,8 +22,8 @@ namespace PMS.Business
 
         public static DataSet LoadTenants()
         {
-            string TheCommand = "select Fullname,Gender,PhoneNumber,EmailAddress,MovingDate,LeaseEndDate,Status from Tenant";
-            SqlConnection MyConnection = new SqlConnection("Data Source=DESKTOP-FH06F72;Initial Catalog=PMS;Integrated Security=True");
+            string TheCommand = "select Fullname,Gender,PhoneNumber,EmailAddress,MoveInDate,LeaseEndDate,Status from Tenant";
+            SqlConnection MyConnection = new SqlConnection(Business.App.ConnectionString);
             SqlDataAdapter MyDataAdapter = new SqlDataAdapter(TheCommand, MyConnection);
 
             DataSet MyDataSet = new DataSet();

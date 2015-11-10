@@ -14,13 +14,12 @@ namespace PMS
 {
     public partial class AddTenant : Form
     {
-        String ConnectionString = "Server=DESKTOP-FH06F72; database=PMS; Integrated security=true";
         public AddTenant()
         {
             InitializeComponent();
         }
         public bool checkProperty(int id) {
-            SqlConnection conn = new SqlConnection(ConnectionString);
+            SqlConnection conn = new SqlConnection(Business.App.ConnectionString);
             String query = "Select * from property";
             SqlCommand cmd = new SqlCommand(query,conn);
             conn.Open();
@@ -39,7 +38,7 @@ namespace PMS
         private void button1_Click(object sender, EventArgs e)
         {
             clearError();
-            SqlConnection conn = new SqlConnection(ConnectionString);
+            SqlConnection conn = new SqlConnection(Business.App.ConnectionString);
             try
             {
                 bool checkEmail = true; bool checkName = true; bool checkPhone = true; bool checkP = true;
@@ -58,8 +57,8 @@ namespace PMS
                     if (rbMale.Checked)
                         gender = "Male";
 
-                    String query = "insert into Tenant(Fullname, Gender,DOB, PhoneNumber,EmailAddress,MovingDate, LeaseEndDate,Status,PropertyID)"
-                                    + "values(@fullname, @gender,@dob,@phonenumber,@emailaddress,@movingdate,@leaseenddate,@status,@propertyid)";
+                    String query = "insert into Tenant(Fullname, Gender,DOB, PhoneNumber,EmailAddress,MoveInDate, LeaseEndDate,Status,PropertyID)"
+                                    + "values(@fullname, @gender,@dob,@phonenumber,@emailaddress,@MoveInDate,@leaseenddate,@status,@propertyid)";
                     SqlCommand cmd = new SqlCommand(query,conn);
                     conn.Open();
                     cmd.Parameters.AddWithValue("@fullname", tbName.Text.Trim());
@@ -67,7 +66,7 @@ namespace PMS
                     cmd.Parameters.AddWithValue("@dob", dtpDob.Text);
                     cmd.Parameters.AddWithValue("@phonenumber", tbPhone.Text.Trim());
                     cmd.Parameters.AddWithValue("@emailaddress", tbEmail.Text.Trim());
-                    cmd.Parameters.AddWithValue("@movingdate", dtpMovingDate.Text);
+                    cmd.Parameters.AddWithValue("@MoveInDate", dtpMovingDate.Text);
                     cmd.Parameters.AddWithValue("@leaseenddate", dtpEndDate.Text);
                     cmd.Parameters.AddWithValue("@status", tbStatus.Text.Trim());
                     cmd.Parameters.AddWithValue("@propertyid", tbPid.Text.Trim());

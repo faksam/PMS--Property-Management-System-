@@ -43,3 +43,5 @@ C:\Users\Star-Lord\Desktop\PMS--Property-Management-System-\PMS\obj\Debug\PMS.Pr
 C:\Users\Star-Lord\Documents\GitHub\PMS--Property-Management-System-\PMS\bin\Debug\PMS.exe.config
 C:\Users\Star-Lord\Documents\GitHub\PMS--Property-Management-System-\PMS\obj\Debug\PMS.exe
 C:\Users\Star-Lord\Documents\GitHub\PMS--Property-Management-System-\PMS\obj\Debug\PMS.pdb
+C:\Users\Samuel\Documents\Visual Studio 2015\Projects\PMS\PMS\obj\Debug\PMS.Presentation.UpdateTenant.resources
+C:\Users\Samuel\Documents\Visual Studio 2015\Projects\PMS\PMS\obj\Debug\PMS.ProjectTeamLogin.resources

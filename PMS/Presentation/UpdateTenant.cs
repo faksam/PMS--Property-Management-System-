@@ -13,7 +13,6 @@ namespace PMS.Presentation
 {
     public partial class UpdateTenant : Form
     {
-        String connectionString = "server=DESKTOP-FH06F72; database=PMS;integrated security=true";
         public void visible(bool value)
         {
             
@@ -55,7 +54,7 @@ namespace PMS.Presentation
 
         private bool checkTenant()
         {
-            SqlConnection conn = new SqlConnection(connectionString);
+            SqlConnection conn = new SqlConnection(Business.App.ConnectionString);
             conn.Open();
             String query = "Select * from tenant where Tenantid ='" + tbid.Text.Trim()+"' ";
             SqlCommand cmd = new SqlCommand(query,conn);
@@ -100,7 +99,7 @@ namespace PMS.Presentation
                 if (rbMale.Checked)
                     gender = "Male";
 
-                SqlConnection conn = new SqlConnection(connectionString);
+                SqlConnection conn = new SqlConnection(Business.App.ConnectionString);
                 String query = "update Tenant set Fullname=@fullname, gender=@gender,dob=@dob,phonenumber=@phonenumber,"
                                 + "EmailAddress=@emailaddress,movingdate=@movingdate,LeaseEndDate=@leaseenddate , status=@status,"
                                 + "propertyid=@propertyid";
