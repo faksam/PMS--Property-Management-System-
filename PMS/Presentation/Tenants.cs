@@ -122,7 +122,7 @@ namespace PMS.Presentation
                 
                 
             }
-            catch { MessageBox.Show("Select a row to edit!!", "Information Message"); }
+            catch { MessageBox.Show("Select a Tenant detail to Dispose!!", "Information Message"); }
         }
 
 
