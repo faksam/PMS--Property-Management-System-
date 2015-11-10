@@ -19,3 +19,22 @@ C:\Users\Samuel\Documents\Visual Studio 2015\Projects\PMS\PMS\obj\Debug\PMS.Pres
 C:\Users\Samuel\Documents\Visual Studio 2015\Projects\PMS\PMS\obj\Debug\PMS.Presentation.Landlords.resources
 C:\Users\Samuel\Documents\Visual Studio 2015\Projects\PMS\PMS\obj\Debug\PMS.Presentation.AddLandlord.resources
 C:\Users\Samuel\Documents\Visual Studio 2015\Projects\PMS\PMS\obj\Debug\PMS.Presentation.LandlordDetails.resources
+C:\Users\Akoji\Desktop\MyGithub\FakSamProject\PMS--Property-Management-System-\PMS\obj\Debug\PMS.exe
+C:\Users\Akoji\Desktop\MyGithub\FakSamProject\PMS--Property-Management-System-\PMS\obj\Debug\PMS.pdb
+C:\Users\Akoji\Desktop\MyGithub\FakSamProject\PMS--Property-Management-System-\PMS\bin\Debug\PMS.exe
+C:\Users\Akoji\Desktop\MyGithub\FakSamProject\PMS--Property-Management-System-\PMS\bin\Debug\PMS.pdb
+C:\Users\Akoji\Desktop\MyGithub\FakSamProject\PMS--Property-Management-System-\PMS\obj\Debug\PMS.csprojResolveAssemblyReference.cache
+C:\Users\Akoji\Desktop\MyGithub\FakSamProject\PMS--Property-Management-System-\PMS\obj\Debug\PMS.Presentation.AddLandlord.resources
+C:\Users\Akoji\Desktop\MyGithub\FakSamProject\PMS--Property-Management-System-\PMS\obj\Debug\PMS.AddProperty.resources
+C:\Users\Akoji\Desktop\MyGithub\FakSamProject\PMS--Property-Management-System-\PMS\obj\Debug\PMS.AddTenant.resources
+C:\Users\Akoji\Desktop\MyGithub\FakSamProject\PMS--Property-Management-System-\PMS\obj\Debug\PMS.Presentation.LandlordDetails.resources
+C:\Users\Akoji\Desktop\MyGithub\FakSamProject\PMS--Property-Management-System-\PMS\obj\Debug\PMS.Presentation.Landlords.resources
+C:\Users\Akoji\Desktop\MyGithub\FakSamProject\PMS--Property-Management-System-\PMS\obj\Debug\PMS.Login.resources
+C:\Users\Akoji\Desktop\MyGithub\FakSamProject\PMS--Property-Management-System-\PMS\obj\Debug\PMS.PMS.resources
+C:\Users\Akoji\Desktop\MyGithub\FakSamProject\PMS--Property-Management-System-\PMS\obj\Debug\PMS.Presentation.Properties.resources
+C:\Users\Akoji\Desktop\MyGithub\FakSamProject\PMS--Property-Management-System-\PMS\obj\Debug\PMS.Presentation.PropertyDetails.resources
+C:\Users\Akoji\Desktop\MyGithub\FakSamProject\PMS--Property-Management-System-\PMS\obj\Debug\PMS.Presentation.Summary.resources
+C:\Users\Akoji\Desktop\MyGithub\FakSamProject\PMS--Property-Management-System-\PMS\obj\Debug\PMS.Tenant.resources
+C:\Users\Akoji\Desktop\MyGithub\FakSamProject\PMS--Property-Management-System-\PMS\obj\Debug\PMS.Presentation.Tenants.resources
+C:\Users\Akoji\Desktop\MyGithub\FakSamProject\PMS--Property-Management-System-\PMS\obj\Debug\PMS.Properties.Resources.resources
+C:\Users\Akoji\Desktop\MyGithub\FakSamProject\PMS--Property-Management-System-\PMS\obj\Debug\PMS.csproj.GenerateResource.Cache
