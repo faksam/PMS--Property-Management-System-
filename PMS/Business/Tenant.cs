@@ -22,7 +22,7 @@ namespace PMS.Business
 
         public static DataSet LoadTenants()
         {
-            string TheCommand = "select Fullname,Gender,PhoneNumber,EmailAddress,MoveInDate,LeaseEndDate,Status from Tenant";
+            string TheCommand = "select Tenantid as 'Tenant ID', Fullname,Gender,PhoneNumber,EmailAddress,MovingDate,LeaseEndDate,Status from Tenant";
             SqlConnection MyConnection = new SqlConnection(Business.App.ConnectionString);
             SqlDataAdapter MyDataAdapter = new SqlDataAdapter(TheCommand, MyConnection);
 

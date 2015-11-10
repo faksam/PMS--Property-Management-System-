@@ -53,27 +53,32 @@ namespace PMS
 
                 if (checkEmail && checkPhone && checkName && checkP)
                 {
-                    String gender = "Female";
-                    if (rbMale.Checked)
-                        gender = "Male";
+                    try
+                    {
+                        String gender = "Female";
+                        if (rbMale.Checked)
+                            gender = "Male";
 
-                    String query = "insert into Tenant(Fullname, Gender,DOB, PhoneNumber,EmailAddress,MoveInDate, LeaseEndDate,Status,PropertyID)"
-                                    + "values(@fullname, @gender,@dob,@phonenumber,@emailaddress,@MoveInDate,@leaseenddate,@status,@propertyid)";
-                    SqlCommand cmd = new SqlCommand(query,conn);
-                    conn.Open();
-                    cmd.Parameters.AddWithValue("@fullname", tbName.Text.Trim());
-                    cmd.Parameters.AddWithValue("@gender", gender);
-                    cmd.Parameters.AddWithValue("@dob", dtpDob.Text);
-                    cmd.Parameters.AddWithValue("@phonenumber", tbPhone.Text.Trim());
-                    cmd.Parameters.AddWithValue("@emailaddress", tbEmail.Text.Trim());
-                    cmd.Parameters.AddWithValue("@MoveInDate", dtpMovingDate.Text);
-                    cmd.Parameters.AddWithValue("@leaseenddate", dtpEndDate.Text);
-                    cmd.Parameters.AddWithValue("@status", tbStatus.Text.Trim());
-                    cmd.Parameters.AddWithValue("@propertyid", tbPid.Text.Trim());
+                        String query = "insert into Tenant(Fullname, Gender,DOB, PhoneNumber,EmailAddress,MovingDate, LeaseEndDate,Status,PropertyID)"
+                                        + "values(@fullname, @gender,@dob,@phonenumber,@emailaddress,@MoveInDate,@leaseenddate,@status,@propertyid)";
+                        SqlCommand cmd = new SqlCommand(query, conn);
+                        conn.Open();
+                        cmd.Parameters.AddWithValue("@fullname", tbName.Text.Trim());
+                        cmd.Parameters.AddWithValue("@gender", gender);
+                        cmd.Parameters.AddWithValue("@dob", dtpDob.Text);
+                        cmd.Parameters.AddWithValue("@phonenumber", tbPhone.Text.Trim());
+                        cmd.Parameters.AddWithValue("@emailaddress", tbEmail.Text.Trim());
+                        cmd.Parameters.AddWithValue("@MoveInDate", dtpMovingDate.Text);
+                        cmd.Parameters.AddWithValue("@leaseenddate", dtpEndDate.Text);
+                        cmd.Parameters.AddWithValue("@status", tbStatus.Text.Trim());
+                        cmd.Parameters.AddWithValue("@propertyid", tbPid.Text.Trim());
 
-                    cmd.ExecuteNonQuery();
-                    conn.Close();
-                    btnClear.PerformClick();
+                        cmd.ExecuteNonQuery();
+                        conn.Close();
+                        btnClear.PerformClick();
+                        viewToolStripMenuItem.PerformClick();
+                    }
+                    catch (Exception ex) { MessageBox.Show(""+ex.Message); }
                 }
 
             }

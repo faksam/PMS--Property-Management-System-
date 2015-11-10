@@ -49,6 +49,8 @@
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nameerror = new System.Windows.Forms.Label();
             this.phoneerror = new System.Windows.Forms.Label();
             this.emailerror = new System.Windows.Forms.Label();
@@ -56,8 +58,6 @@
             this.rbMale = new System.Windows.Forms.RadioButton();
             this.label10 = new System.Windows.Forms.Label();
             this.piderror = new System.Windows.Forms.Label();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -214,7 +214,7 @@
             this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.btnAdd.Location = new System.Drawing.Point(317, 455);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(173, 30);
+            this.btnAdd.Size = new System.Drawing.Size(102, 30);
             this.btnAdd.TabIndex = 37;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -223,9 +223,9 @@
             // btnClear
             // 
             this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.btnClear.Location = new System.Drawing.Point(56, 455);
+            this.btnClear.Location = new System.Drawing.Point(545, 455);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(173, 30);
+            this.btnClear.Size = new System.Drawing.Size(102, 30);
             this.btnClear.TabIndex = 38;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = true;
@@ -265,6 +265,22 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(967, 541);
             this.panel1.TabIndex = 0;
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.viewToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(173, 26);
+            // 
+            // viewToolStripMenuItem
+            // 
+            this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
+            this.viewToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            | System.Windows.Forms.Keys.V)));
+            this.viewToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
+            this.viewToolStripMenuItem.Text = "View";
+            this.viewToolStripMenuItem.Click += new System.EventHandler(this.viewToolStripMenuItem_Click);
             // 
             // nameerror
             // 
@@ -328,22 +344,6 @@
             this.piderror.Name = "piderror";
             this.piderror.Size = new System.Drawing.Size(0, 13);
             this.piderror.TabIndex = 39;
-            // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.viewToolStripMenuItem});
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(173, 26);
-            // 
-            // viewToolStripMenuItem
-            // 
-            this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
-            this.viewToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
-            | System.Windows.Forms.Keys.V)));
-            this.viewToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
-            this.viewToolStripMenuItem.Text = "View";
-            this.viewToolStripMenuItem.Click += new System.EventHandler(this.viewToolStripMenuItem_Click);
             // 
             // AddTenant
             // 

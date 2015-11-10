@@ -34,7 +34,7 @@ namespace PMS
             Business.App.ConnectionString = "Data Source=desktop-6qd49hv\\ibrahim;Initial Catalog=PMS;Integrated Security=True";
             Load();
         }
-        private void Load()
+        private new void Load()
         {
             Login lgn = new Login();
             lgn.Show();

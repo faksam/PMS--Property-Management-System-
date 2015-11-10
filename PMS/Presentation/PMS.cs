@@ -24,14 +24,14 @@ namespace PMS
         {
            //Summary and Settings pages are constant
            //Clearing Current TabPage Controls
-            tbcPMS.TabPages[1].Controls.Clear();
             tbcPMS.TabPages[2].Controls.Clear();
+            tbcPMS.TabPages[3].Controls.Clear();
 
            //Load Properties
-            tbcPMS.TabPages[1].Controls.Add(Business.Property.LoadPropertiesForm());
+            tbcPMS.TabPages[2].Controls.Add(Business.Property.LoadPropertiesForm());
 
            //Load Tenants
-            tbcPMS.TabPages[2].Controls.Add(Business.Tenant.LoadTenantsForm());
+            tbcPMS.TabPages[3].Controls.Add(Business.Tenant.LoadTenantsForm());
         }
 
        private void PMS_Load(object sender, EventArgs e)

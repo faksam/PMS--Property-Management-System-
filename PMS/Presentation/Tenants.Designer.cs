@@ -57,7 +57,7 @@
             this.modifyTenantToolStripMenuItem,
             this.deleteTenantToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(206, 70);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(206, 92);
             // 
             // addANewTenantToolStripMenuItem
             // 
@@ -80,6 +80,7 @@
             this.deleteTenantToolStripMenuItem.Name = "deleteTenantToolStripMenuItem";
             this.deleteTenantToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
             this.deleteTenantToolStripMenuItem.Text = "Delete Tenant";
+            this.deleteTenantToolStripMenuItem.Click += new System.EventHandler(this.deleteTenantToolStripMenuItem_Click_1);
             // 
             // panel1
             // 
