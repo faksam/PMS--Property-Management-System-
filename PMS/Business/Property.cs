@@ -26,7 +26,7 @@ namespace PMS.Business
         public static DataSet LoadProperties()
         {
             string TheCommand = "select PropertyType,Address,Status from property";
-            SqlConnection MyConnection = new SqlConnection("Data Source=DESKTOP-6QD49HV\\IBRAHIM;Initial Catalog=PMS;Integrated Security=True");
+            SqlConnection MyConnection = new SqlConnection(Business.App.ConnectionString);
             SqlDataAdapter MyDataAdapter = new SqlDataAdapter(TheCommand, MyConnection);
 
             DataSet MyDataSet = new DataSet();

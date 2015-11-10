@@ -33,6 +33,7 @@
             this.tbpProperty = new System.Windows.Forms.TabPage();
             this.tbpSummary = new System.Windows.Forms.TabPage();
             this.tbcPMS = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tbcPMS.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -80,6 +81,7 @@
             // 
             this.tbcPMS.Appearance = System.Windows.Forms.TabAppearance.FlatButtons;
             this.tbcPMS.Controls.Add(this.tbpSummary);
+            this.tbcPMS.Controls.Add(this.tabPage1);
             this.tbcPMS.Controls.Add(this.tbpProperty);
             this.tbcPMS.Controls.Add(this.tbpTenant);
             this.tbcPMS.Controls.Add(this.tbpSetting);
@@ -90,6 +92,16 @@
             this.tbcPMS.SelectedIndex = 0;
             this.tbcPMS.Size = new System.Drawing.Size(1031, 617);
             this.tbcPMS.TabIndex = 0;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Location = new System.Drawing.Point(4, 27);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(1023, 586);
+            this.tabPage1.TabIndex = 4;
+            this.tabPage1.Text = "Landlord";
+            this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // PMS
             // 
@@ -102,6 +114,7 @@
             this.Name = "PMS";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Property Management System";
+            this.Load += new System.EventHandler(this.PMS_Load);
             this.tbcPMS.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -114,7 +127,7 @@
         private System.Windows.Forms.TabPage tbpProperty;
         private System.Windows.Forms.TabPage tbpSummary;
         private System.Windows.Forms.TabControl tbcPMS;
-
+        private System.Windows.Forms.TabPage tabPage1;
     }
 }
 

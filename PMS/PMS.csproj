@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Business\App.cs" />
     <Compile Include="Business\Landlord.cs" />
     <Compile Include="Business\Property.cs" />
     <Compile Include="Business\Tenant.cs" />
@@ -114,7 +115,19 @@
     <Compile Include="Presentation\Tenants.Designer.cs">
       <DependentUpon>Tenants.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentation\UpdateTenant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\UpdateTenant.Designer.cs">
+      <DependentUpon>UpdateTenant.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
+    <Compile Include="ProjectTeamLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProjectTeamLogin.Designer.cs">
+      <DependentUpon>ProjectTeamLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Presentation\TenantDetails.cs">
       <SubType>Form</SubType>
@@ -157,6 +170,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\Tenants.resx">
       <DependentUpon>Tenants.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\UpdateTenant.resx">
+      <DependentUpon>UpdateTenant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProjectTeamLogin.resx">
+      <DependentUpon>ProjectTeamLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

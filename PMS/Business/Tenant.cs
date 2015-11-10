@@ -23,7 +23,7 @@ namespace PMS.Business
         public static DataSet LoadTenants()
         {
             string TheCommand = "select Fullname,Gender,PhoneNumber,EmailAddress,MoveInDate,LeaseEndDate,Status from Tenant";
-            SqlConnection MyConnection = new SqlConnection("Data Source=FAKSAM;Initial Catalog=PMS;Integrated Security=True");
+            SqlConnection MyConnection = new SqlConnection(Business.App.ConnectionString);
             SqlDataAdapter MyDataAdapter = new SqlDataAdapter(TheCommand, MyConnection);
 
             DataSet MyDataSet = new DataSet();
@@ -44,6 +44,6 @@ namespace PMS.Business
             frm.Dock = DockStyle.Fill;
             return frm;
         }
-
+       
     }
 }

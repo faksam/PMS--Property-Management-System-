@@ -19,6 +19,7 @@ C:\Users\Samuel\Documents\Visual Studio 2015\Projects\PMS\PMS\obj\Debug\PMS.Pres
 C:\Users\Samuel\Documents\Visual Studio 2015\Projects\PMS\PMS\obj\Debug\PMS.Presentation.Landlords.resources
 C:\Users\Samuel\Documents\Visual Studio 2015\Projects\PMS\PMS\obj\Debug\PMS.Presentation.AddLandlord.resources
 C:\Users\Samuel\Documents\Visual Studio 2015\Projects\PMS\PMS\obj\Debug\PMS.Presentation.LandlordDetails.resources
+<<<<<<< HEAD
 C:\Users\Akoji\Desktop\MyGithub\FakSamProject\PMS--Property-Management-System-\PMS\obj\Debug\PMS.exe
 C:\Users\Akoji\Desktop\MyGithub\FakSamProject\PMS--Property-Management-System-\PMS\obj\Debug\PMS.pdb
 C:\Users\Akoji\Desktop\MyGithub\FakSamProject\PMS--Property-Management-System-\PMS\bin\Debug\PMS.exe
@@ -38,3 +39,33 @@ C:\Users\Akoji\Desktop\MyGithub\FakSamProject\PMS--Property-Management-System-\P
 C:\Users\Akoji\Desktop\MyGithub\FakSamProject\PMS--Property-Management-System-\PMS\obj\Debug\PMS.Presentation.Tenants.resources
 C:\Users\Akoji\Desktop\MyGithub\FakSamProject\PMS--Property-Management-System-\PMS\obj\Debug\PMS.Properties.Resources.resources
 C:\Users\Akoji\Desktop\MyGithub\FakSamProject\PMS--Property-Management-System-\PMS\obj\Debug\PMS.csproj.GenerateResource.Cache
+=======
+C:\Users\Star-Lord\Desktop\PMS--Property-Management-System-\PMS\bin\Debug\PMS.exe.config
+C:\Users\Star-Lord\Desktop\PMS--Property-Management-System-\PMS\obj\Debug\PMS.exe
+C:\Users\Star-Lord\Desktop\PMS--Property-Management-System-\PMS\obj\Debug\PMS.pdb
+C:\Users\Star-Lord\Desktop\PMS--Property-Management-System-\PMS\bin\Debug\PMS.exe
+C:\Users\Star-Lord\Desktop\PMS--Property-Management-System-\PMS\bin\Debug\PMS.pdb
+C:\Users\Star-Lord\Desktop\PMS--Property-Management-System-\PMS\obj\Debug\PMS.csprojResolveAssemblyReference.cache
+C:\Users\Star-Lord\Desktop\PMS--Property-Management-System-\PMS\obj\Debug\PMS.Presentation.AddLandlord.resources
+C:\Users\Star-Lord\Desktop\PMS--Property-Management-System-\PMS\obj\Debug\PMS.AddProperty.resources
+C:\Users\Star-Lord\Desktop\PMS--Property-Management-System-\PMS\obj\Debug\PMS.AddTenant.resources
+C:\Users\Star-Lord\Desktop\PMS--Property-Management-System-\PMS\obj\Debug\PMS.Presentation.LandlordDetails.resources
+C:\Users\Star-Lord\Desktop\PMS--Property-Management-System-\PMS\obj\Debug\PMS.Presentation.Landlords.resources
+C:\Users\Star-Lord\Desktop\PMS--Property-Management-System-\PMS\obj\Debug\PMS.Login.resources
+C:\Users\Star-Lord\Desktop\PMS--Property-Management-System-\PMS\obj\Debug\PMS.PMS.resources
+C:\Users\Star-Lord\Desktop\PMS--Property-Management-System-\PMS\obj\Debug\PMS.Presentation.Properties.resources
+C:\Users\Star-Lord\Desktop\PMS--Property-Management-System-\PMS\obj\Debug\PMS.Presentation.PropertyDetails.resources
+C:\Users\Star-Lord\Desktop\PMS--Property-Management-System-\PMS\obj\Debug\PMS.Presentation.Summary.resources
+C:\Users\Star-Lord\Desktop\PMS--Property-Management-System-\PMS\obj\Debug\PMS.Tenant.resources
+C:\Users\Star-Lord\Desktop\PMS--Property-Management-System-\PMS\obj\Debug\PMS.Presentation.Tenants.resources
+C:\Users\Star-Lord\Desktop\PMS--Property-Management-System-\PMS\obj\Debug\PMS.Properties.Resources.resources
+C:\Users\Star-Lord\Desktop\PMS--Property-Management-System-\PMS\obj\Debug\PMS.csproj.GenerateResource.Cache
+C:\Users\Star-Lord\Desktop\PMS--Property-Management-System-\PMS\obj\Debug\PMS.Presentation.UpdateTenant.resources
+C:\Users\Star-Lord\Documents\GitHub\PMS--Property-Management-System-\PMS\bin\Debug\PMS.exe.config
+C:\Users\Star-Lord\Documents\GitHub\PMS--Property-Management-System-\PMS\obj\Debug\PMS.exe
+C:\Users\Star-Lord\Documents\GitHub\PMS--Property-Management-System-\PMS\obj\Debug\PMS.pdb
+C:\Users\Samuel\Documents\Visual Studio 2015\Projects\PMS\PMS\obj\Debug\PMS.Presentation.UpdateTenant.resources
+C:\Users\Samuel\Documents\Visual Studio 2015\Projects\PMS\PMS\obj\Debug\PMS.ProjectTeamLogin.resources
+>>>>>>> 5451bb223450631d2ef2ea2f068436b14e81dcc0
+C:\Users\Akoji\Desktop\MyGithub\FakSamProject\PMS--Property-Management-System-\PMS\obj\Debug\PMS.Presentation.UpdateTenant.resources
+C:\Users\Akoji\Desktop\MyGithub\FakSamProject\PMS--Property-Management-System-\PMS\obj\Debug\PMS.ProjectTeamLogin.resources

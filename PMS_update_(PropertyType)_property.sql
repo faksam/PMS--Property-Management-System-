@@ -33,6 +33,7 @@ Username varchar(20) not null,
 [Password] varchar(15) not null check ([password] >= 8),
 ManagerID int foreign key  references Manager(ManagerID)
 )
+
 create table Property 
 (
 PropertyID int identity (1,1) primary key,
@@ -40,8 +41,12 @@ PropertyID int identity (1,1) primary key,
 Price money,
 PropertyType varchar(20) not null,
 Size int,
-Description varchar(50),
-[Status] varchar(20),
+Discription ntext,
+[Status] ntext,
+Building varchar(20),
+LivingArea varchar(20),
+NumberOfRooms int,
+NumberOfBathroom int,
 Imagefolder varchar(150),
 ManagerID int foreign key  references Manager(ManagerID),
 LandLordID int foreign key  references LandLord(LandLordID)
@@ -55,11 +60,12 @@ Gender varchar(10),
 DOB date,
 PhoneNumber int not null,
 EmailAddress varchar (50),
-MoveInDate date,
+MovingDate date,
 LeaseEndDate date,
 [Status] varchar(15),
 PropertyID int  foreign key  references Property (PropertyID)
 )
+
 
 
 Select * from Manager
@@ -72,16 +78,9 @@ select * from Tenant
 
 
 select * from Property
+go
 
+insert into Manager(Fullname,Gender,DOB,[Address],PhoneNumber,EmailAddress,Username,[Password]) 
+values ('ManagerName','Male','09-05-1992','ManagerAddress',123456789,'ManagerEmail','ManagerUsername',1234567)
 
-
-/*
-select Landlord.fullname as [Landlord], property.PropertyType,property.Address,property.Status from property 
-, landlord where property.LandLordID=landlord.LandLordID
-
-select Fullname,Gender,PhoneNumber,EmailAddress,MoveInDate,LeaseEndDate,Status from Tenant
-
-
-insert into Manager values ('ManagerName','Male','09-05-1992',123456789,'ManagerEmail','ManagerAddress','ManagerUsername',1234567)
-*/
-
+insert into Property (Address,PropertyType) values('Blah blah blah','Estate')
