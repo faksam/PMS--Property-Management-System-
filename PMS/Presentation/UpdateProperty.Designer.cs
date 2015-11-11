@@ -1,6 +1,6 @@
 ﻿namespace PMS.Presentation
 {
-    partial class PropertyDetails
+    partial class UpdateProperty
     {
         /// <summary>
         /// Required designer variable.
@@ -33,6 +33,7 @@
             this.cbStatus = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.cbPropertyType = new System.Windows.Forms.ComboBox();
+            this.btnCancel = new System.Windows.Forms.Button();
             this.txtDescription = new System.Windows.Forms.TextBox();
             this.btnProperty = new System.Windows.Forms.Button();
             this.txtSize = new System.Windows.Forms.TextBox();
@@ -42,17 +43,16 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.btnBackToList = new System.Windows.Forms.Button();
             this.grbPropertyDetails.SuspendLayout();
             this.SuspendLayout();
             // 
             // grbPropertyDetails
             // 
-            this.grbPropertyDetails.Controls.Add(this.btnBackToList);
             this.grbPropertyDetails.Controls.Add(this.txtAddress);
             this.grbPropertyDetails.Controls.Add(this.cbStatus);
             this.grbPropertyDetails.Controls.Add(this.label1);
             this.grbPropertyDetails.Controls.Add(this.cbPropertyType);
+            this.grbPropertyDetails.Controls.Add(this.btnCancel);
             this.grbPropertyDetails.Controls.Add(this.txtDescription);
             this.grbPropertyDetails.Controls.Add(this.btnProperty);
             this.grbPropertyDetails.Controls.Add(this.txtSize);
@@ -65,8 +65,8 @@
             this.grbPropertyDetails.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbPropertyDetails.Location = new System.Drawing.Point(12, 12);
             this.grbPropertyDetails.Name = "grbPropertyDetails";
-            this.grbPropertyDetails.Size = new System.Drawing.Size(942, 516);
-            this.grbPropertyDetails.TabIndex = 18;
+            this.grbPropertyDetails.Size = new System.Drawing.Size(943, 517);
+            this.grbPropertyDetails.TabIndex = 22;
             this.grbPropertyDetails.TabStop = false;
             this.grbPropertyDetails.Text = "Property Details";
             // 
@@ -75,7 +75,6 @@
             this.txtAddress.Location = new System.Drawing.Point(154, 43);
             this.txtAddress.Multiline = true;
             this.txtAddress.Name = "txtAddress";
-            this.txtAddress.ReadOnly = true;
             this.txtAddress.Size = new System.Drawing.Size(355, 82);
             this.txtAddress.TabIndex = 1;
             // 
@@ -107,23 +106,33 @@
             this.cbPropertyType.Size = new System.Drawing.Size(249, 26);
             this.cbPropertyType.TabIndex = 14;
             // 
+            // btnCancel
+            // 
+            this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel.Location = new System.Drawing.Point(376, 447);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(91, 23);
+            this.btnCancel.TabIndex = 1;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            // 
             // txtDescription
             // 
             this.txtDescription.Location = new System.Drawing.Point(154, 290);
             this.txtDescription.Multiline = true;
             this.txtDescription.Name = "txtDescription";
-            this.txtDescription.ReadOnly = true;
             this.txtDescription.Size = new System.Drawing.Size(355, 82);
             this.txtDescription.TabIndex = 7;
             // 
             // btnProperty
             // 
             this.btnProperty.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnProperty.Location = new System.Drawing.Point(396, 447);
+            this.btnProperty.Location = new System.Drawing.Point(168, 447);
             this.btnProperty.Name = "btnProperty";
-            this.btnProperty.Size = new System.Drawing.Size(113, 23);
+            this.btnProperty.Size = new System.Drawing.Size(91, 23);
             this.btnProperty.TabIndex = 0;
-            this.btnProperty.Text = "Edit Property";
+            this.btnProperty.Text = "Update";
             this.btnProperty.UseVisualStyleBackColor = true;
             this.btnProperty.Click += new System.EventHandler(this.btnProperty_Click);
             // 
@@ -131,7 +140,6 @@
             // 
             this.txtSize.Location = new System.Drawing.Point(154, 246);
             this.txtSize.Name = "txtSize";
-            this.txtSize.ReadOnly = true;
             this.txtSize.Size = new System.Drawing.Size(249, 24);
             this.txtSize.TabIndex = 5;
             // 
@@ -149,7 +157,6 @@
             // 
             this.txtPrice.Location = new System.Drawing.Point(154, 150);
             this.txtPrice.Name = "txtPrice";
-            this.txtPrice.ReadOnly = true;
             this.txtPrice.Size = new System.Drawing.Size(249, 24);
             this.txtPrice.TabIndex = 3;
             // 
@@ -193,25 +200,14 @@
             this.label4.TabIndex = 6;
             this.label4.Text = "Size:";
             // 
-            // btnBackToList
-            // 
-            this.btnBackToList.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBackToList.Location = new System.Drawing.Point(559, 447);
-            this.btnBackToList.Name = "btnBackToList";
-            this.btnBackToList.Size = new System.Drawing.Size(113, 23);
-            this.btnBackToList.TabIndex = 16;
-            this.btnBackToList.Text = "Back to List";
-            this.btnBackToList.UseVisualStyleBackColor = true;
-            this.btnBackToList.Click += new System.EventHandler(this.btnBackToList_Click);
-            // 
-            // PropertyDetails
+            // UpdateProperty
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(967, 541);
             this.Controls.Add(this.grbPropertyDetails);
-            this.Name = "PropertyDetails";
-            this.Text = "Property";
+            this.Name = "UpdateProperty";
+            this.Text = "UpdateProperty";
             this.grbPropertyDetails.ResumeLayout(false);
             this.grbPropertyDetails.PerformLayout();
             this.ResumeLayout(false);
@@ -225,6 +221,7 @@
         private System.Windows.Forms.ComboBox cbStatus;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cbPropertyType;
+        private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.TextBox txtDescription;
         private System.Windows.Forms.Button btnProperty;
         private System.Windows.Forms.TextBox txtSize;
@@ -234,7 +231,5 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button btnBackToList;
-
     }
 }

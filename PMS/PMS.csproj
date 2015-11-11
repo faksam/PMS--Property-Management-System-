@@ -115,6 +115,12 @@
     <Compile Include="Presentation\Tenants.Designer.cs">
       <DependentUpon>Tenants.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentation\UpdateProperty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\UpdateProperty.Designer.cs">
+      <DependentUpon>UpdateProperty.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentation\UpdateTenant.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -170,6 +176,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\Tenants.resx">
       <DependentUpon>Tenants.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\UpdateProperty.resx">
+      <DependentUpon>UpdateProperty.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\UpdateTenant.resx">
       <DependentUpon>UpdateTenant.cs</DependentUpon>

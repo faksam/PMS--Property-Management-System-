@@ -76,6 +76,12 @@ select * from Property
 
 
 /*
+Note do not delete comment tags
+------------------------------
+Only add your query here and run by selecting query text.
+........................................................
+
+
 select Landlord.fullname as [Landlord], property.PropertyType,property.Address,property.Status from property 
 , landlord where property.LandLordID=landlord.LandLordID
 
@@ -83,5 +89,8 @@ select Fullname,Gender,PhoneNumber,EmailAddress,MoveInDate,LeaseEndDate,Status f
 
 
 insert into Manager values ('ManagerName','Male','09-05-1992',123456789,'ManagerEmail','ManagerAddress','ManagerUsername',1234567)
+
+
+insert into Property (Address,Price,PropertyType,Size,Description,Status) values ('PropertyAddress',12000,'Commercial',1000,'Property Description','Available')
 */
 

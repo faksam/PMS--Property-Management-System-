@@ -36,7 +36,52 @@ namespace PMS.Business
             MyConnection.Close();
             return MyDataSet;
         }
+        public static void AddProperty(string Address,string Price,string PropertyType,string Size,
+                                        string Description,string Status)
+        {
+            SqlConnection MyConnection = new SqlConnection(Business.App.ConnectionString);
+            String query = "insert into Property(Address, Price,PropertyType,Size,Description,Status)"
+                                        + "values(@address, @price,@propertyType,@size,@description,@status)";
+            SqlCommand cmd = new SqlCommand(query, MyConnection);
+            MyConnection.Open();
+            cmd.Parameters.AddWithValue("@address", Address);
+            cmd.Parameters.AddWithValue("@price", Price);
+            cmd.Parameters.AddWithValue("@propertyType", PropertyType);
+            cmd.Parameters.AddWithValue("@size", Size);
+            cmd.Parameters.AddWithValue("@description", Description);
+            cmd.Parameters.AddWithValue("@status", Status);
+            cmd.ExecuteNonQuery();
+            MyConnection.Close();
 
+
+/*
+            SqlConnection MyConnection = new SqlConnection(Business.App.ConnectionString);
+            SqlCommand MyCommand;
+            MyConnection.Open();
+            MyCommand = new SqlCommand(PassedCommands, MyConnection);
+            MyCommand.ExecuteNonQuery();
+            MyConnection.Close();
+              
+             */
+        }
+        public static void AddNewTenant()
+        {
+
+        }
+        public static void ViewCurrentTenants()
+        {
+
+        }
+        public static void UpdateProperty(string Address, string Price, string PropertyType, string Size,
+                                        string Description, string Status
+         )
+        {
+            
+        }
+        public static void DeleteProperty()
+        {
+
+        }
         public static Form LoadPropertiesForm()
         {
             Presentation.Properties frm = new Presentation.Properties();
@@ -47,6 +92,37 @@ namespace PMS.Business
             frm.Dock = DockStyle.Fill;
             return frm;
         }
+        public static Form LoadPropertyDetails()
+        {
+            Presentation.PropertyDetails pd = new Presentation.PropertyDetails();
+            pd.BringToFront();
+            pd.TopLevel = false;
+            pd.Visible = true;
+            pd.FormBorderStyle = FormBorderStyle.None;
+            pd.Dock = DockStyle.Fill;
+            return pd;
+        }
+        public static Form LoadAddPropertyForm()
+        {
+            Presentation.AddProperty frm = new Presentation.AddProperty();
+            frm.BringToFront();
+            frm.TopLevel = false;
+            frm.Visible = true;
+            frm.FormBorderStyle = FormBorderStyle.None;
+            frm.Dock = DockStyle.Fill;
+            return frm;
+        }
 
+
+        internal static Control LoadUpdatePropertyForm()
+        {
+            Presentation.UpdateProperty frm = new Presentation.UpdateProperty();
+            frm.BringToFront();
+            frm.TopLevel = false;
+            frm.Visible = true;
+            frm.FormBorderStyle = FormBorderStyle.None;
+            frm.Dock = DockStyle.Fill;
+            return frm;
+        }
     }
 }

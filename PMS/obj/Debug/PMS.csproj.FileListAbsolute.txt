@@ -19,3 +19,26 @@ C:\Users\Star-Lord\Documents\PRJ\PMS--Property-Management-System-\PMS\obj\Debug\
 C:\Users\Star-Lord\Documents\PRJ\PMS--Property-Management-System-\PMS\obj\Debug\PMS.csproj.GenerateResource.Cache
 C:\Users\Star-Lord\Documents\PRJ\PMS--Property-Management-System-\PMS\obj\Debug\PMS.exe
 C:\Users\Star-Lord\Documents\PRJ\PMS--Property-Management-System-\PMS\obj\Debug\PMS.pdb
+C:\Users\Samuel\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\Debug\PMS.exe.config
+C:\Users\Samuel\Documents\Visual Studio 2015\Projects\PMS\PMS\obj\Debug\PMS.exe
+C:\Users\Samuel\Documents\Visual Studio 2015\Projects\PMS\PMS\obj\Debug\PMS.pdb
+C:\Users\Samuel\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\Debug\PMS.exe
+C:\Users\Samuel\Documents\Visual Studio 2015\Projects\PMS\PMS\bin\Debug\PMS.pdb
+C:\Users\Samuel\Documents\Visual Studio 2015\Projects\PMS\PMS\obj\Debug\PMS.csprojResolveAssemblyReference.cache
+C:\Users\Samuel\Documents\Visual Studio 2015\Projects\PMS\PMS\obj\Debug\PMS.Presentation.AddLandlord.resources
+C:\Users\Samuel\Documents\Visual Studio 2015\Projects\PMS\PMS\obj\Debug\PMS.AddTenant.resources
+C:\Users\Samuel\Documents\Visual Studio 2015\Projects\PMS\PMS\obj\Debug\PMS.Presentation.LandlordDetails.resources
+C:\Users\Samuel\Documents\Visual Studio 2015\Projects\PMS\PMS\obj\Debug\PMS.Presentation.Landlords.resources
+C:\Users\Samuel\Documents\Visual Studio 2015\Projects\PMS\PMS\obj\Debug\PMS.Login.resources
+C:\Users\Samuel\Documents\Visual Studio 2015\Projects\PMS\PMS\obj\Debug\PMS.PMS.resources
+C:\Users\Samuel\Documents\Visual Studio 2015\Projects\PMS\PMS\obj\Debug\PMS.Presentation.Properties.resources
+C:\Users\Samuel\Documents\Visual Studio 2015\Projects\PMS\PMS\obj\Debug\PMS.Presentation.PropertyDetails.resources
+C:\Users\Samuel\Documents\Visual Studio 2015\Projects\PMS\PMS\obj\Debug\PMS.Presentation.Summary.resources
+C:\Users\Samuel\Documents\Visual Studio 2015\Projects\PMS\PMS\obj\Debug\PMS.Tenant.resources
+C:\Users\Samuel\Documents\Visual Studio 2015\Projects\PMS\PMS\obj\Debug\PMS.Presentation.Tenants.resources
+C:\Users\Samuel\Documents\Visual Studio 2015\Projects\PMS\PMS\obj\Debug\PMS.Presentation.UpdateTenant.resources
+C:\Users\Samuel\Documents\Visual Studio 2015\Projects\PMS\PMS\obj\Debug\PMS.ProjectTeamLogin.resources
+C:\Users\Samuel\Documents\Visual Studio 2015\Projects\PMS\PMS\obj\Debug\PMS.Properties.Resources.resources
+C:\Users\Samuel\Documents\Visual Studio 2015\Projects\PMS\PMS\obj\Debug\PMS.csproj.GenerateResource.Cache
+C:\Users\Samuel\Documents\Visual Studio 2015\Projects\PMS\PMS\obj\Debug\PMS.Presentation.AddProperty.resources
+C:\Users\Samuel\Documents\Visual Studio 2015\Projects\PMS\PMS\obj\Debug\PMS.Presentation.UpdateProperty.resources

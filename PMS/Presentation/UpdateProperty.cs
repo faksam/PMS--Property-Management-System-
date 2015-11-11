@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PMS.Presentation
 {
-    public partial class AddProperty : Form
+    public partial class UpdateProperty : Form
     {
-        public AddProperty()
+        public UpdateProperty()
         {
             InitializeComponent();
         }
@@ -25,8 +25,8 @@ namespace PMS.Presentation
 
         private void btnProperty_Click(object sender, EventArgs e)
         {
-            //Save propertydetails to database
-            Business.Property.AddProperty(txtAddress.ToString(), txtPrice.ToString(), cbPropertyType.ToString(),
+            //Update propertydetails to database
+            Business.Property.UpdateProperty(txtAddress.ToString(), txtPrice.ToString(), cbPropertyType.ToString(),
                                         txtSize.ToString(), txtDescription.ToString(), cbStatus.ToString()
                                         );
             this.Controls.Clear();

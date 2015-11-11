@@ -16,5 +16,20 @@ namespace PMS.Presentation
         {
             InitializeComponent();
         }
+
+
+        private void btnProperty_Click(object sender, EventArgs e)
+        {
+            //Save propertydetails to database
+
+            this.Controls.Clear();
+            this.Controls.Add(Business.Property.LoadUpdatePropertyForm());
+        }
+
+        private void btnBackToList_Click(object sender, EventArgs e)
+        {
+            this.Controls.Clear();
+            this.Controls.Add(Business.Property.LoadPropertiesForm());
+        }
     }
 }
