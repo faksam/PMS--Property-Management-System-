@@ -58,19 +58,22 @@ namespace PMS.Presentation
             InitializeComponent();
             visible(false);
             tbid.Text = "" + id;
-            checkTenant();
+            LoadTenantInfo();
         }
-        private bool checkTenant()
+        private bool LoadTenantInfo()
         {
+            if (!Business.Tenant.TenantExist(int.Parse(tbid.Text.Trim())))
+            { iderror.Text = "Tenant with ID " + tbid.Text + " does not exist"; visible(false); return false; }
+            
             SqlConnection conn = new SqlConnection(Business.App.ConnectionString);
             conn.Open();
-            String query = "Select * from tenant where Tenantid ='" + tbid.Text.Trim() + "' ";
+            String query = "Select Tenantid,fullname,gender,DOB,PhoneNumber,emailaddress,moveindate,leaseEndDate,status,propertyid"
+                            +" from tenant where Tenantid ='" + tbid.Text.Trim() + "' ";
             SqlCommand cmd = new SqlCommand(query, conn);
             SqlDataReader read = cmd.ExecuteReader();
 
             {
 
-                //int Tid = read.GetInt32(0);
                 if (read.Read())
                 {
                     String fullname = read.GetString(1);
@@ -78,16 +81,18 @@ namespace PMS.Presentation
                     String dob = read.GetDateTime(3).ToString();
                     int phone = read.GetInt32(4);
                     String email = read.GetString(5);
-                    String movingDate = read.GetDateTime(6).ToString();
+                    String movingDate = "Null";
+                    if (read.GetDateTime(6) != null)
+                    movingDate = read.GetDateTime(6).ToString();
                     String leaseEndDate = read.GetDateTime(7).ToString();
                     String status = read.GetString(8);
                     int propertyid = read.GetInt32(9);
                     visible(true);
                     set(fullname, email, phone + "", status, dob, leaseEndDate, movingDate, gender, propertyid);
                 }
-                else iderror.Text = "Tenant Id does not Exist";
+                iderror.Text ="";
             }
-            return false;
+            return true;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -95,8 +100,7 @@ namespace PMS.Presentation
             if (tbid.Text == "") iderror.Text = "ID column Cannot be null";
             else
             {
-
-                checkTenant();
+                LoadTenantInfo();
             }
         }
 
@@ -111,7 +115,7 @@ namespace PMS.Presentation
 
                 SqlConnection conn = new SqlConnection(Business.App.ConnectionString);
                 String query = "update Tenant set Fullname=@fullname, gender=@gender,dob=@dob,phonenumber=@phonenumber,"
-                                + "EmailAddress=@emailaddress,movingdate=@movingdate,LeaseEndDate=@leaseenddate , status=@status,"
+                                + "EmailAddress=@emailaddress,moveindate=@movingdate,LeaseEndDate=@leaseenddate , status=@status,"
                                 + "propertyid=@propertyid where Tenantid=@Tid";
                 SqlCommand cmd = new SqlCommand(query, conn);
                 conn.Open();
@@ -133,24 +137,13 @@ namespace PMS.Presentation
 
 
             }
-            catch { }
+            catch (Exception ex) { MessageBox.Show(ex.Message); }
         }
 
         private void viewToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Panel display = new Panel();
-            Presentation.Tenants tenant = new Presentation.Tenants();
-            tenant.BringToFront();
-            tenant.TopLevel = false;
-            tenant.Visible = true;
-            tenant.FormBorderStyle = FormBorderStyle.None;
-            tenant.Dock = DockStyle.Fill;
-            display.Controls.Add(tenant);
-            display.Size = panel1.Size;
-            panel1.Controls.Add(display);
-            display.Show();
-            display.BringToFront();
-            tenant.Show();
+            Controls.Clear();
+            this.Controls.Add(Business.Tenant.LoadTenentMainForm());
         }
     }
 }

@@ -42,11 +42,20 @@
             // 
             // DGVTenants
             // 
+            this.DGVTenants.AllowUserToOrderColumns = true;
+            this.DGVTenants.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.DGVTenants.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
             this.DGVTenants.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DGVTenants.ContextMenuStrip = this.contextMenuStrip1;
             this.DGVTenants.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DGVTenants.Location = new System.Drawing.Point(0, 0);
+            this.DGVTenants.MultiSelect = false;
             this.DGVTenants.Name = "DGVTenants";
+            this.DGVTenants.ReadOnly = true;
+            this.DGVTenants.RowHeadersWidth = 60;
+            this.DGVTenants.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.DGVTenants.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.DGVTenants.ShowEditingIcon = false;
             this.DGVTenants.Size = new System.Drawing.Size(967, 541);
             this.DGVTenants.TabIndex = 0;
             // 
@@ -57,13 +66,13 @@
             this.modifyTenantToolStripMenuItem,
             this.deleteTenantToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(206, 92);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(207, 70);
             // 
             // addANewTenantToolStripMenuItem
             // 
             this.addANewTenantToolStripMenuItem.Name = "addANewTenantToolStripMenuItem";
             this.addANewTenantToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.A)));
-            this.addANewTenantToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
+            this.addANewTenantToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
             this.addANewTenantToolStripMenuItem.Text = " Add new Tenant";
             this.addANewTenantToolStripMenuItem.Click += new System.EventHandler(this.addANewTenantToolStripMenuItem_Click);
             // 
@@ -71,14 +80,14 @@
             // 
             this.modifyTenantToolStripMenuItem.Name = "modifyTenantToolStripMenuItem";
             this.modifyTenantToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.M)));
-            this.modifyTenantToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
+            this.modifyTenantToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
             this.modifyTenantToolStripMenuItem.Text = "Modify Tenant";
             this.modifyTenantToolStripMenuItem.Click += new System.EventHandler(this.modifyTenantToolStripMenuItem_Click);
             // 
             // deleteTenantToolStripMenuItem
             // 
             this.deleteTenantToolStripMenuItem.Name = "deleteTenantToolStripMenuItem";
-            this.deleteTenantToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
+            this.deleteTenantToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
             this.deleteTenantToolStripMenuItem.Text = "Delete Tenant";
             this.deleteTenantToolStripMenuItem.Click += new System.EventHandler(this.deleteTenantToolStripMenuItem_Click_1);
             // 

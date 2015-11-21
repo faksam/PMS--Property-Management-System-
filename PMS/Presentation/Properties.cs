@@ -60,7 +60,7 @@ namespace PMS.Presentation
                     m.Show(DGVProperties, new Point(e.X, e.Y));
 
                 }
-            }catch(Exception ex)
+            }catch
             { 
             
             }

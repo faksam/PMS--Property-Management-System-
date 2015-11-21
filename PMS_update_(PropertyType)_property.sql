@@ -60,7 +60,7 @@ Gender varchar(10),
 DOB date,
 PhoneNumber int not null,
 EmailAddress varchar (50),
-MovingDate date,
+MoveInDate date,
 LeaseEndDate date,
 [Status] varchar(15),
 PropertyID int  foreign key  references Property (PropertyID)
@@ -84,3 +84,4 @@ insert into Manager(Fullname,Gender,DOB,[Address],PhoneNumber,EmailAddress,Usern
 values ('ManagerName','Male','09-05-1992','ManagerAddress',123456789,'ManagerEmail','ManagerUsername',1234567)
 
 insert into Property (Address,PropertyType) values('Blah blah blah','Estate')
+

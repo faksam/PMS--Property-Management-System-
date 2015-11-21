@@ -19,7 +19,6 @@ namespace PMS.Presentation
             InitializeComponent();
             LoadData();
             DGVTenants.ReadOnly = true;
-            DGVTenants.Width = 500;
         }
 
         public void LoadData()
@@ -43,55 +42,25 @@ namespace PMS.Presentation
         }
         private void addANewTenantToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
-            AddTenant tenant = new AddTenant();
-            tenant.BringToFront();
-            tenant.TopLevel = false;
-            tenant.Visible = true;
-            tenant.FormBorderStyle = FormBorderStyle.None;
-            tenant.Dock = DockStyle.Fill;
-            panel1.Controls.Add(tenant);
-            tenant.Show();
-            DGVTenants.Hide();
-
+            Controls.Clear();
+            Controls.Add(Business.Tenant.LoadAddTenentForm());
         }
 
         private void modifyTenantToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            Form fm = null;
             try
             {
                 int selectedRow = DGVTenants.CurrentCell.RowIndex;
                 int id = int.Parse(DGVTenants.Rows[selectedRow].Cells[0].Value.ToString());
-                Panel display = new Panel();
-                Presentation.UpdateTenant tenant = new Presentation.UpdateTenant(id);
-                tenant.BringToFront();
-                tenant.TopLevel = false;
-                tenant.Visible = true;
-                tenant.FormBorderStyle = FormBorderStyle.None;
-                tenant.Dock = DockStyle.Fill;
-                display.Controls.Add(tenant);
-                display.Size = panel1.Size;
-                panel1.Controls.Add(display);
-                display.Show();
-                display.BringToFront();
-                tenant.Show();
+                fm = Business.Tenant.LoadModifyTenentForm(id);
             }
             catch
             {
-                Panel display = new Panel();
-                Presentation.UpdateTenant tenant = new Presentation.UpdateTenant();
-                tenant.BringToFront();
-                tenant.TopLevel = false;
-                tenant.Visible = true;
-                tenant.FormBorderStyle = FormBorderStyle.None;
-                tenant.Dock = DockStyle.Fill;
-                display.Controls.Add(tenant);
-                display.Size = panel1.Size;
-                panel1.Controls.Add(display);
-                display.Show();
-                display.BringToFront();
-                tenant.Show();
+                fm = Business.Tenant.LoadModifyTenentForm();
             }
+            this.Controls.Clear();
+            this.Controls.Add(fm);
         }
 
         private void deleteTenantToolStripMenuItem_Click(object sender, EventArgs e)
@@ -124,7 +93,6 @@ namespace PMS.Presentation
             }
             catch { MessageBox.Show("Select a Tenant detail to Dispose!!", "Information Message"); }
         }
-
 
     }
 }

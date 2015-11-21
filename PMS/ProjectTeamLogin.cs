@@ -25,7 +25,7 @@ namespace PMS
 
         private void btnEzzy_Click(object sender, EventArgs e)
         {
-            Business.App.ConnectionString = "Data Source=DESKTOP-FH06F72;Initial Catalog=PMS;Integrated Security=True";
+            Business.App.ConnectionString = "Data Source=StarBlaz;Initial Catalog=PMS;Integrated Security=True";
             Load();
         }
 

@@ -56,10 +56,13 @@
             this.emailerror = new System.Windows.Forms.Label();
             this.rbFemale = new System.Windows.Forms.RadioButton();
             this.rbMale = new System.Windows.Forms.RadioButton();
-            this.label10 = new System.Windows.Forms.Label();
             this.piderror = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.panel1.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // tbName
@@ -96,7 +99,7 @@
             // 
             // tbPhone
             // 
-            this.tbPhone.Location = new System.Drawing.Point(317, 181);
+            this.tbPhone.Location = new System.Drawing.Point(305, 162);
             this.tbPhone.Name = "tbPhone";
             this.tbPhone.Size = new System.Drawing.Size(330, 20);
             this.tbPhone.TabIndex = 24;
@@ -104,7 +107,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(53, 181);
+            this.label3.Location = new System.Drawing.Point(41, 169);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(78, 13);
             this.label3.TabIndex = 25;
@@ -116,13 +119,12 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F);
             this.label4.Location = new System.Drawing.Point(52, 22);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(207, 22);
+            this.label4.Size = new System.Drawing.Size(0, 22);
             this.label4.TabIndex = 26;
-            this.label4.Text = "Enter New Tenant Detail";
             // 
             // tbPid
             // 
-            this.tbPid.Location = new System.Drawing.Point(317, 251);
+            this.tbPid.Location = new System.Drawing.Point(305, 243);
             this.tbPid.Name = "tbPid";
             this.tbPid.Size = new System.Drawing.Size(129, 20);
             this.tbPid.TabIndex = 27;
@@ -157,7 +159,7 @@
             // dtpDob
             // 
             this.dtpDob.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.dtpDob.CustomFormat = "yyyy / dd / MM";
+            this.dtpDob.CustomFormat = "MM/ dd / yyyy";
             this.dtpDob.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpDob.Location = new System.Drawing.Point(317, 328);
             this.dtpDob.Name = "dtpDob";
@@ -183,7 +185,7 @@
             // dtpMovingDate
             // 
             this.dtpMovingDate.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.dtpMovingDate.CustomFormat = "yyyy / dd / MM";
+            this.dtpMovingDate.CustomFormat = "MM/ dd / yyyy";
             this.dtpMovingDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpMovingDate.Location = new System.Drawing.Point(317, 367);
             this.dtpMovingDate.Name = "dtpMovingDate";
@@ -202,7 +204,7 @@
             // dtpEndDate
             // 
             this.dtpEndDate.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.dtpEndDate.CustomFormat = "yyyy / dd / MM";
+            this.dtpEndDate.CustomFormat = "MM/ dd / yyyy";
             this.dtpEndDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpEndDate.Location = new System.Drawing.Point(317, 404);
             this.dtpEndDate.Name = "dtpEndDate";
@@ -214,7 +216,7 @@
             this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.btnAdd.Location = new System.Drawing.Point(317, 455);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(102, 30);
+            this.btnAdd.Size = new System.Drawing.Size(82, 30);
             this.btnAdd.TabIndex = 37;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -223,9 +225,9 @@
             // btnClear
             // 
             this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.btnClear.Location = new System.Drawing.Point(545, 455);
+            this.btnClear.Location = new System.Drawing.Point(563, 443);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(102, 30);
+            this.btnClear.Size = new System.Drawing.Size(78, 30);
             this.btnClear.TabIndex = 38;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = true;
@@ -233,15 +235,12 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.SystemColors.Control;
             this.panel1.ContextMenuStrip = this.contextMenuStrip1;
             this.panel1.Controls.Add(this.nameerror);
             this.panel1.Controls.Add(this.phoneerror);
             this.panel1.Controls.Add(this.emailerror);
-            this.panel1.Controls.Add(this.rbFemale);
-            this.panel1.Controls.Add(this.rbMale);
-            this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.piderror);
-            this.panel1.Controls.Add(this.btnClear);
             this.panel1.Controls.Add(this.btnAdd);
             this.panel1.Controls.Add(this.dtpEndDate);
             this.panel1.Controls.Add(this.label9);
@@ -252,14 +251,12 @@
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.tbPid);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.tbPhone);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.tbEmail);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.tbName);
+            this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -309,7 +306,7 @@
             // rbFemale
             // 
             this.rbFemale.AutoSize = true;
-            this.rbFemale.Location = new System.Drawing.Point(368, 216);
+            this.rbFemale.Location = new System.Drawing.Point(92, 19);
             this.rbFemale.Name = "rbFemale";
             this.rbFemale.Size = new System.Drawing.Size(31, 17);
             this.rbFemale.TabIndex = 43;
@@ -320,22 +317,13 @@
             // rbMale
             // 
             this.rbMale.AutoSize = true;
-            this.rbMale.Location = new System.Drawing.Point(317, 216);
+            this.rbMale.Location = new System.Drawing.Point(6, 19);
             this.rbMale.Name = "rbMale";
             this.rbMale.Size = new System.Drawing.Size(34, 17);
             this.rbMale.TabIndex = 42;
             this.rbMale.TabStop = true;
             this.rbMale.Text = "M";
             this.rbMale.UseVisualStyleBackColor = true;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(53, 216);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(42, 13);
-            this.label10.TabIndex = 41;
-            this.label10.Text = "Gender";
             // 
             // piderror
             // 
@@ -344,6 +332,31 @@
             this.piderror.Name = "piderror";
             this.piderror.Size = new System.Drawing.Size(0, 13);
             this.piderror.TabIndex = 39;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.btnClear);
+            this.groupBox1.Controls.Add(this.tbPid);
+            this.groupBox1.Controls.Add(this.groupBox2);
+            this.groupBox1.Controls.Add(this.tbPhone);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(943, 517);
+            this.groupBox1.TabIndex = 47;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Enter New Tenant Detail";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.rbFemale);
+            this.groupBox2.Controls.Add(this.rbMale);
+            this.groupBox2.Location = new System.Drawing.Point(305, 188);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(129, 44);
+            this.groupBox2.TabIndex = 39;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Gender";
             // 
             // AddTenant
             // 
@@ -358,6 +371,10 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.contextMenuStrip1.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -387,12 +404,13 @@
         private System.Windows.Forms.Label piderror;
         private System.Windows.Forms.RadioButton rbFemale;
         private System.Windows.Forms.RadioButton rbMale;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label emailerror;
         private System.Windows.Forms.Label nameerror;
         private System.Windows.Forms.Label phoneerror;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem viewToolStripMenuItem;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox2;
 
 
 
